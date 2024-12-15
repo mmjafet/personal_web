@@ -4,6 +4,7 @@
 
     $name = "Jafet";
     $age = 22;
+    $hobbies = ["leer", "", "Coding"];
     ?>
 <head>
     <meta charset="UTF-8">
