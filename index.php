@@ -11,6 +11,20 @@ $experiencia = [
 
 $habilidades = ["HTML5", "CSS3", "JavaScript", "PHP", "Bootstrap", "MySQL" ,"Python", "GitHub", "Git", "C", "Figma"];
 $contacto = ["correo" => "tucorreo@ejemplo.com", "telefono" => "123-456-7890", "ciudad" => "Tu Ciudad"];
+
+$aplicaciones = [
+    "HTML5" => "img/html5.png",
+    "CSS3" => "img/css3.png",
+    "JavaScript" => "img/javascript.png",
+    "PHP" => "img/php.png",
+    "Bootstrap" => "img/bootstrap.png",
+    "MySQL" => "img/mysql.png",
+    "Python" => "img/python.png",
+    "GitHub" => "img/github.png",
+    "Git" => "img/git.png",
+    "C" => "img/c.png",
+    "Figma" => "img/figma.png"
+];
 ?>
 
 <!DOCTYPE html>
