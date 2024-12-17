@@ -9,7 +9,7 @@ $experiencia = [
     ["título" => "Asistente de TI", "empresa" => "Empresa XYZ", "periodo" => "2019 - 2021"]
 ];
 
-$habilidades = ["HTML5", "CSS3", "JavaScript", "PHP", "Bootstrap", "MySQL"];
+$habilidades = ["HTML5", "CSS3", "JavaScript", "PHP", "Bootstrap", "MySQL" ,"Python", "GitHub", "Git", "C", "Figma"];
 $contacto = ["correo" => "tucorreo@ejemplo.com", "telefono" => "123-456-7890", "ciudad" => "Tu Ciudad"];
 ?>
 
