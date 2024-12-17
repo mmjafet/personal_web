@@ -132,21 +132,54 @@ $aplicaciones = [
         </div>
     </section>
 
-    <!-- Habilidades -->
-    <section class="container my-5">
-        <h2 class="section-title">Habilidades</h2>
-        <div class="row text-center">
-            <?php foreach ($habilidades as $habilidad): ?>
-                <div class="col-md-3 mb-3">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <strong><?php echo $habilidad; ?></strong>
-                        </div>
-                    </div>
-                </div>
-            <?php endforeach; ?>
+    <?php foreach ($habilidades as $habilidad): ?>
+    <div class="col-md-3 mb-3">
+        <div class="card shadow-sm habilidad-card" 
+             data-habilidad="<?php echo $habilidad; ?>" 
+             data-imagen="<?php echo $aplicaciones[$habilidad] ?? ''; ?>">
+            <div class="card-body">
+                <strong><?php echo $habilidad; ?></strong>
+            </div>
         </div>
-    </section>
+    </div>
+<?php endforeach; ?>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Selecciona todas las tarjetas de habilidad
+    const habilidades = document.querySelectorAll('.habilidad-card');
+    
+    habilidades.forEach(function (card) {
+        card.addEventListener('mouseenter', function () {
+            // Obtener el nombre de la habilidad y la imagen
+            const nombreHabilidad = card.getAttribute('data-habilidad');
+            const imagenHabilidad = card.getAttribute('data-imagen');
+
+            // Asignar la información al modal
+            document.getElementById('modalHabilidadLabel').innerText = nombreHabilidad;
+            document.getElementById('modalImagen').src = imagenHabilidad;
+
+            // Mostrar el modal
+            const modal = new bootstrap.Modal(document.getElementById('modalHabilidad'));
+            modal.show();
+        });
+    });
+});
+</script>
+
+<!-- Modal para mostrar información -->
+<div class="modal fade" id="modalHabilidad" tabindex="-1" aria-labelledby="modalHabilidadLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalHabilidadLabel">Habilidad</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImagen" src="" class="img-fluid" alt="Aplicación" style="max-height: 300px;">
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Footer -->
     <footer>
