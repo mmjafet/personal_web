@@ -142,7 +142,7 @@ $aplicaciones = [
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
-            <p>&copy; <?php echo date("Y"); ?> <?php echo $nombre; ?> | Todos los derechos reservados.</p>
+            <p>&copy;  echo date("Y"); ?> <?php echo $nombre; ?> | Todos los derechos reservados.</p>
         </div>
     </footer>
 
