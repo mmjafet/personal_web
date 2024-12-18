@@ -1,7 +1,7 @@
 <?php
-$nombre = "Tu Nombre";
+$nombre = "Jafet Martínez";
 $profesion = "Desarrollador Web";
-$descripcion = "Soy un apasionado del desarrollo web con experiencia en PHP, JavaScript y tecnologías frontend modernas como Bootstrap.";
+$descripcion = "Apacionadp del desarrollo web con expereciencia en el desarrollo de aplicaciones web con pyhton y php";
 
 $experiencia = [
     ["título" => "Desarrollador Backend", "empresa" => "Empresa ABC", "periodo" => "2021 - Presente"],
@@ -10,7 +10,7 @@ $experiencia = [
 
 $habilidades = ["HTML5", "CSS3", "JavaScript", "PHP", "Bootstrap", "MySQL", "Python", "GitHub", "Git", "C", "Figma"];
 $aplicaciones = [
-    "HTML5" => "img/html5.png",
+    "HTML5" => "img/Html5.png",
     "CSS3" => "img/css3.png",
     "JavaScript" => "img/javascript.png",
     "PHP" => "img/php.png",
@@ -73,6 +73,10 @@ $aplicaciones = [
             width: 40px; /* Tamaño pequeño */
             height: 40px;
         }
+
+        .experiencia-lista li {
+            font-size: 1.1rem;
+        }
     </style>
 </head>
 <body>
@@ -84,6 +88,18 @@ $aplicaciones = [
             <p><?php echo $descripcion; ?></p>
         </div>
     </header>
+
+    <!-- Sección de Experiencia -->
+    <section class="container my-5">
+        <h2 class="section-title">Experiencia</h2>
+        <ul class="list-group experiencia-lista">
+            <?php foreach ($experiencia as $experiencia_item): ?>
+                <li class="list-group-item">
+                    <strong><?php echo $experiencia_item['título']; ?></strong> en <?php echo $experiencia_item['empresa']; ?> (<?php echo $experiencia_item['periodo']; ?>)
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </section>
 
     <!-- Habilidades -->
     <section class="container my-5">
