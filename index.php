@@ -103,7 +103,7 @@ $aplicaciones = [
 
     <!-- Habilidades -->
     <section class="container my-5">
-        <h2 class="section-title">Habilidades</h2>
+        <h2 class="section-title">Herramientas</h2>
         <div class="row">
             <?php foreach ($habilidades as $habilidad): ?>
                 <div class="col-md-3 mb-3">
