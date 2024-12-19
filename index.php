@@ -5,7 +5,7 @@ $descripcion = "Apacionadp del desarrollo web con expereciencia en el desarrollo
 
 $experiencia = [
     ["título" => "Desarrollador Backend", "empresa" => "Empresa ABC", "periodo" => "2021 - Presente"],
-    ["título" => "Asistente de TI", "empresa" => "Empresa XYZ", "periodo" => "2019 - 2021"]
+    ["título" => "Proyecto de punto de venta", "empresa" => "Empresa XYZ", "periodo" => "2019 - 2021"]
 ];
 
 $habilidades = ["HTML5", "CSS3", "JavaScript", "PHP", "Bootstrap", "MySQL", "Python", "GitHub", "Git", "C", "Figma"];
