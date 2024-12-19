@@ -91,7 +91,7 @@ $aplicaciones = [
 
     <!-- Sección de Experiencia -->
     <section class="container my-5">
-        <h2 class="section-title">Experiencia</h2>
+        <h2 class="section-title">Ex</h2>
         <ul class="list-group experiencia-lista">
             <?php foreach ($experiencia as $experiencia_item): ?>
                 <li class="list-group-item">
